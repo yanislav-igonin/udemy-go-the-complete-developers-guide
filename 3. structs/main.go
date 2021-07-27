@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+type contactInfo struct {
+	email string
+	zip   int
+}
+
 type person struct {
 	firstName string
 	lastName  string
@@ -9,8 +14,13 @@ type person struct {
 }
 
 func main() {
-	var alex person
-	alex.firstName = "Alex"
-	alex.lastName = "Anderson"
+	alex := person{
+		firstName: "Alex",
+		lastName:  "Anderson",
+		contact: contactInfo{
+			zip:   000000,
+			email: "alex@alex.com",
+		},
+	}
 	fmt.Printf("%+v", alex)
 }
