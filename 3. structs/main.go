@@ -18,7 +18,7 @@ func main() {
 		firstName: "Alex",
 		lastName:  "Anderson",
 		contact: contactInfo{
-			zip:   000000,
+			zip:   900010,
 			email: "alex@alex.com",
 		},
 	}
